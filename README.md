@@ -15,7 +15,7 @@ CREDITS:
 For rescaling and interpolating I adapted H. Taube’s rescale and interp functions from his [commonmusic](https://commonmusic.sourceforge.net) library.
 To encode xml file I utilise [xmlbuilder2](https://github.com/oozcitak/xmlbuilder2) library.
 To display music score on web page > [verovio](https://www.verovio.org/index.xhtml) library
-To unzip .mxl files > [jszip] (https://stuk.github.io/jszip/)
+To unzip .mxl files > [jszip](https://stuk.github.io/jszip/)
 For midi playback [wildwebmidi](https://github.com/zz85/wild-web-midi)
 
 
