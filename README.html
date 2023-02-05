@@ -1,0 +1,19 @@
+
+<p>The source code of this project resides at GitHub <a href="https://github.com/ayk-caglayan/music_plasticity"> music_plasticity</a></p>
+<p>DESCRIPTION:</p>
+<p>Web-app musicplasticity allows users to change rhythmic and harmonic content of a multi-part music.</p>
+<p>It is a MusicXML processor for browser, which does the whole job on the client-side.</p>
+<p>It imports MusicXML file, translates musical (symbolic) data into numeric domain, process it according to user input and translate it back to symbolic data, displays it with verovio library and serialize it as .musicxml data, which then can be downloaded by the user.</p>
+<p>You can upload your own MusicXML file to process. Processing take place on x (time) and y (harmony) coordinates by rescaling their value. Time can be fastened and slowed down (i.e. multiplying each note by a scaler) - accordingly, note values and time signatures are being changed, notes are repacked into bars. Metre can be modified with gradual change. At this case notes are rescaled with corresponding interpolated values between start and end values.</p>
+<p>Harmonic processing is being achieved by changing upper and lower ranges of a given multi-part music and calculating/rescaling each part according to these new ranges.</p>
+<p>Exporting MusicXML was the most difficult stage at this project. I write an experimental .musicxml exporter, which does the job not perfectly. Some note within a bar might be missing, though softwares like MuseScore or Logic Pro corrects it perfectly.</p>
+<p>CREDITS: For rescaling and interpolating I adapted H. Taube’s rescale and interp functions from his <a href="https://commonmusic.sourceforge.net">commonmusic</a> library.</p>
+<p>To encode xml file I utilise <a href="https://github.com/oozcitak/xmlbuilder2">xmlbuilder2</a> library.</p>
+<p>To display music score on web page &gt; <a href="https://www.verovio.org/index.xhtml">verovio</a> library</p>
+<p>To unzip .mxl files &gt; <a href="https://stuk.github.io/jszip/">jszip</a></p>
+<p>For midi playback <a href="https://github.com/zz85/wild-web-midi">wildwebmidi</a></p>
+<p>TODO: Tuplets. I need to add capabilities to quantize rhythmic values to multiples of 0.2 (quintuplets) and 0.3 (triplets) and serialize them to MusicXML file.</p>
+<p>Time-signatures. It needs to be reissued the algorithm, which is responsible for packing notes as bars.</p>
+<footer style="position: fixed; bottom: 0; width: 100%; height: 30px; background-color: #f1f1f1; text-align: center;"> 
+      <a href="https://www.aykutcaglayan.net/legal.html"> Impressum & Datenschutz </a>
+  </footer>

@@ -32,3 +32,10 @@
   display: inline-block;
   width: 100%;
 }
+
+/* fix about button to the righth side of the window */
+#about_button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
